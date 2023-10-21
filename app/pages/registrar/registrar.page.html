@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Creando Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Agregar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="/"
+       text="volver"
+       color="primary"
+       mode="ios"></ion-back-button>
+  </ion-buttons>
+  
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">usuario:</ion-label>
+      <ion-input type="text" name="txtNombre" [(ngModel)]="newUsuario.username" placeholder="Rodolfo..."  required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña:</ion-label>
+      <ion-input type="password" name="txtContraseña" [(ngModel)]="newUsuario.password" placeholder="******" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Correo electronico:</ion-label>
+      <ion-input type="email" name="txtTipo" [(ngModel)]="newUsuario.correo" placeholder="duocuc@duoc.cl" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="crearUsuario()" expand="block" color="success">Crear usuario</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

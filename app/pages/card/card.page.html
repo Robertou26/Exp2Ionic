@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"
+         text="volver"
+         color="primary"
+         mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+   <ion-card-header class="encabezado">
+      <ion-card-subtitle style="color:black; font-weight: bold;">Bienvenido!</ion-card-subtitle>
+    </ion-card-header>
+    <ion-list>
+      <ion-item *ngFor="let u of usuarios; let i=index" [routerLink]="['/detalle', u.id]">
+        <ion-label>Bienvenido! {{u['username']}} </ion-label>
+        
+      </ion-item>
+    </ion-list>
+    <img src="assets/Codigo.jpg" class="ion-padding" style="background-color:aqua;">
+  </ion-card>
+
+  
+
+
+
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="MostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="success"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>My App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title style="justify-content: center;">RegistrAPP!</ion-card-title>
+    <img src="assets/registrar.png" class="ion-padding" style="background-color: aqua;" height="10%">
+  </ion-card-header>
+  <ion-card-content>
+  <ion-button href='/login' expand="block" fill="solid" color="success" shape="round">
+    Ingresar
+  </ion-button>
+    <ion-item href='/registrar'>
+      <ion-label>No tienes cuenta? Registrate!</ion-label>
+    </ion-item>
+
+  </ion-card-content>
+</ion-card>
+
+
+</ion-content>

@@ -1,0 +1,64 @@
+{
+  "alumnos": [
+    {
+      "id": 1,
+      "nombre": "Pedro",
+      "tipoPersona": "Alumno",
+      "rut": "21.126.732-k"
+    },
+    {
+      "id": 2,
+      "nombre": "Juan",
+      "tipoPersona": "Alumno",
+      "rut": "21.521.232-1"
+    },
+    {
+      "id": 3,
+      "nombre": "Ana",
+      "tipoPersona": "Alumno",
+      "raza": "19.232.123-6"
+    },
+    {
+      "id": 4,
+      "nombre": "Roberto",
+      "tipoPersona": "Alumno",
+      "rut": "21.124.888-2"
+    }
+  ],
+  "usuarios": [
+    {
+      "id":1,
+      "username":"roberto",
+      "password":"1234",
+      "role":"usuario",
+      "isactive":true
+    },
+    {
+      "id":2,
+      "username":"defa",
+      "password":"defa1",
+      "role":"usuario",
+      "isactive":true
+    }
+  ],
+  "api":
+
+  [
+    {
+      "userId": 1,
+      "id": "feriado"
+    },
+    {
+      "userId": 2,
+      "id": "feriado"
+    },
+    {
+      "userId": 3,
+      "id": "feriado"
+    },
+    {
+      "userId": 4,
+      "id": "feriado"
+    }
+  ]
+}
